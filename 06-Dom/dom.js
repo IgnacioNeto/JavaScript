@@ -33,3 +33,35 @@ titulo.style.textAlign = "center";
 titulo.style.backgroundImage = 'linear-gradient(lightyellow, lightblue)';
 titulo.style.color ="red";
 
+// ____________________________________________________________________________
+
+// CSS vis JS (Tabela)
+
+// first-child ----- (1º da lista)
+// nth-child (2)---- (2º da lista)
+// last-child -------(3º da lista)
+
+
+const listaEditores = document.querySelector('#lista-editores');
+
+const ultimo = listaEditores.querySelector('li:last-child');
+const primeiro = listaEditores.querySelector('li:first-child');
+const outro = listaEditores.querySelector('li:nth-child(2)');
+
+console.log(outro.textContent);
+
+ultimo.classList.add('destaque-item');
+
+// Adicionando o atributo target em todos os links da lista de referencias
+// Selecionando todos os links contidos na lista ul
+
+// Obs .querySelectorAll retorna sempre uma MATRIZ
+const links = document.querySelectorAll('ul li a');
+console.log(links);
+
+// links[0].style.color ='red';
+
+// Laço para atribuir o atributo target_Blank em todos os Links
+for (let i = 0; i < links.length; i++){
+    links[i].setAttribute('target', '_blank')
+}
