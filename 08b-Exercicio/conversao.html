@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+        <h1>Conversão (Dolar em Reais)</h1>
+
+        <!--Entrada do valor-->
+		<label>Valor (em $):</label><br>		
+		<input type="text" id="texto"/>
+            			
+		<!--Botão de conversão -->
+		<input type="button" value="Converter" onClick="conversao()"/>
+        <p>&nbsp;</p>
+			
+		<!--Resultado exibido na tela-->
+		
+		<label id="resultado">Resultado (em R$):</label><br />
+        <h2 id="valorFinal"></h2>
+    
+    <script src="conversao.js"></script>
+</body>
+</html>
