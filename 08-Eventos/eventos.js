@@ -1,7 +1,8 @@
-let nome = document.getElementById("nome");
-let resultado = document.getElementById("resultado");
-
 function clique() {
-    resultado.textContent = nome.value;
+
+    let nome = document.getElementById("nome").value;
+    let resultado = document.getElementById("resultado");
+
+   return resultado.textContent = nome;
 
 }
