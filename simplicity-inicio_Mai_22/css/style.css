@@ -1,0 +1,106 @@
+*, *::after, *::before {
+    box-sizing: border-box; /* Reset básico inicial */
+}
+
+img {
+     max-width: 100%; /* Deixa todas as imagens responsivas */
+}
+html {
+    font-size: 14px;
+}
+body, h1, h2, h3, p, figure {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+a {
+    text-decoration: none; /* Elimina o undeline*/
+
+}
+h1, nav {
+    text-transform: uppercase; /* Deixa em letras maisculas */
+}
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem; /* 14px (Declarado acima) * 1,5 = 26px*/
+}
+
+h1 a {
+    color: white;
+    background-color: black;
+    padding: 0.3rem 1rem; /* Relativo a 14px (font-size declarado acima) */
+    border-radius: 5px;
+}
+header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+header .limitador {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Centraliza na vertical */
+}
+
+.limitador {
+    max-width: 1100px;
+    width: 95vw;
+    margin: auto; /* Centraliza na horizontal */
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;  /* Deixa desligado o menu (no mobile) */
+}
+nav {
+    width: 65%;
+
+}
+
+nav h2 {
+    text-align: right;
+}
+
+.icone {
+    font-size: 1.2rem;
+    padding: 1rem;
+    display: inline-block;
+    height: 50px;
+}
+
+h2 a {
+    color: black;
+
+}
+
+.menu a {
+    color: black;
+    font-weight: bold;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+}
+
+.menu a:hover, .menu a:active {
+    background-color: gainsboro;
+}
+
+/* Esta classe será manipulada via JS */
+.menu-aberto {
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+
+}
