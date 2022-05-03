@@ -1,5 +1,8 @@
 let formulario = document.querySelector('form');
 
+
+
+
 formulario.addEventListener('submit', function(event) {
 event.preventDefault();
 
@@ -9,9 +12,9 @@ let sorteado = document.getElementById('sorteado');
 
 let resultado = document.getElementById('resultado');
 
-// var i = 1;
+var i = 1;
 
-// while(i <= 3){
+while(i <= 3){
 
 if (palpiteUsuario == numeroEscolhido) {
     resultado.innerHTML = "Você acertou!";
@@ -39,9 +42,13 @@ if (palpiteUsuario == numeroEscolhido) {
     resultado.innerHTML = "Você errou...";
 }; */
 
-// while (i++ < 3); }
-// alert("Número máximo de tentativas atingido!!");
+i++ < 3; }
+
 });
+
+
+console.log(i);
+// alert("Número máximo de tentativas atingido!!");
 
             
 
