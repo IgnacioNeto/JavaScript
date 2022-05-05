@@ -135,3 +135,82 @@ h2 a {
     from {opacity: 0;}
     to{ opacity: 1;}
 }
+
+.front-end, .localizacao {
+    text-align: center;
+    
+}
+section h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+section p {
+    padding: 0.5rem 0;
+}
+figure {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.historia {
+    background-image: url(../imagens/fundo-madeira.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 1rem;
+
+}
+.historia h2 {
+    color: #fff;
+    text-shadow: #000 1px 1px 2px;
+}
+iframe {
+    width: 100%;
+    border: none;
+}
+.historia iframe {
+    /* Colocado aqui porque eu quero isso somente no vídeo, não no mapa */
+    max-width: 800px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    height: 14vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* _________________________________________________________________ */
+/* Media queries */
+
+@media screen and (min-width: 600px) {
+    .icone {display: none;}
+
+    .menu {display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    }
+
+    .menu a { 
+        padding: 0 1rem;
+    }
+    
+}
+
+@media screen and (min-width: 800px) {
+    html {
+        font-size: 18px;
+    }
+    header .limitador {
+        height: 15vh;
+    }
+    .destaque {
+        height: 85vh;
+    }
+
+}
