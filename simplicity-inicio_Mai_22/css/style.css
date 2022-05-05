@@ -104,3 +104,34 @@ h2 a {
     left: 0;
 
 }
+
+/* Section com a classe destaque */
+.destaque {
+    background-image: url(../imagens/fundo-destaque.jpg);
+    height: 90vh;
+    color: white;
+    background-size: cover; /* Permite que a imagem cubra toda a tela Ex_4K */
+    background-attachment: fixed; /* Cria o efeito paralaxe */
+    text-align: center; /* Texto alinhado ao meio */
+
+    display: flex; /* Sem ele aqui não funciona as linhas abaixo */
+    justify-content: center; /* Centraliza o conteudo horizontalmente */
+    align-items: center; /* Centraliza o conteudo verticalmente */
+
+}
+
+.destaque h2 {
+    /* clamp(MIN, IDEAL, MAX) */
+    font-size: clamp(2rem, 8vw, 7rem); /* Deixa o texto responsivo */
+    animation-name: fadeIn; /* Cria a animação */
+    animation-duration: 1.5s; /* Duração da animação */
+}
+.destaque p {
+    /* clamp(MIN, IDEAL, MAX) */
+    font-size: clamp(1.6rem, 2vw, 4rem); /* Deixa o texto responsivo */
+    animation: fadeIn 1.5s 1s backwards; /* Delay da animação */
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to{ opacity: 1;}
+}
