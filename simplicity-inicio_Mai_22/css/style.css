@@ -214,3 +214,47 @@ footer {
     }
 
 }
+/* Formatando Páginas internas */
+.conteudo {
+    background-color: whitesmoke;
+    padding: 0.7rem;
+    border-radius: 7px;
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse; /* junta as bordas */
+
+}
+table {
+    width: 80%;
+    margin: auto;
+    max-width: 700px;
+}
+th {
+    background-color: #000;
+    color: #fff;
+}
+td {
+    background-color: #fff;
+}
+th, td {
+    width: 33%;
+    padding: 0.5rem;
+}
+/* td:first-child (Tambem funcionaria)*/
+td:nth-child(1) {
+    text-transform: uppercase;
+}
+td:nth-child(2) {
+    text-align: center;
+}
+/* td:last-child (Tambem funcionaria)*/
+td:nth-child(3) {
+    color: blue;
+}
+
+caption { /* Palavra acima da tabela */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
