@@ -320,8 +320,21 @@
 
         let conteudo = textMensagem.val();
         let contagem = quantidade - conteudo.length;
-        console.log(contagem);
 
+        // Exibindo o número de caracteres no HTML
+        bCaracteres.text(contagem);
+
+        // Se para trocar para frase "Limite de caracteres alcançado" e voltar
+        if (contagem == 0) {
+            spanMaximo.css('color', 'red');
+            spanMaximo.text("Limite de caracteres alcançado");
+        } else if (contagem == 1){
+            spanMaximo.css('color', 'black');
+            spanMaximo.html("(resta apenas <b id='caracteres'>" +contagem+ "</b> caractere)");     
+        } else {
+            spanMaximo.css('color', 'black');
+            spanMaximo.html("(restam <b id='caracteres'>" +contagem+ "</b> caracteres)");
+        }
     });
 
 </script>
