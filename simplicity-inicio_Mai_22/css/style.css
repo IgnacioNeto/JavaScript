@@ -40,6 +40,8 @@ header {
     background-color: #fff;
     position: sticky;
     top: 0;
+    z-index: 9999; /* Para aparecer na frente quando desdobrar o menu Hamburger */
+    /* Obs: Feito oposto jquery z-index: 9998 (Para garantir) */
 }
 
 header .limitador {
